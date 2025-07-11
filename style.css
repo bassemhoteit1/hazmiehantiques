@@ -3,13 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Times New Roman', serif;
   background-color: white;
   color: #222;
+  scroll-behavior: smooth;
 }
-
 header {
   background-color: #ddd;
   padding: 1em;
@@ -17,14 +16,12 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 #menu-btn {
   font-size: 24px;
   background: none;
   border: none;
   cursor: pointer;
 }
-
 #sidebar {
   position: fixed;
   top: 0;
@@ -36,11 +33,9 @@ header {
   padding: 20px;
   transition: left 0.3s ease;
 }
-
 #sidebar.active {
   left: 0;
 }
-
 #close-btn {
   background: none;
   border: none;
@@ -48,54 +43,51 @@ header {
   float: right;
   cursor: pointer;
 }
-
 #sidebar ul {
   list-style: none;
   margin-top: 2em;
 }
-
 #sidebar li {
   margin: 1em 0;
 }
-
 #sidebar a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
-
 .hero {
   text-align: center;
   padding: 2em;
   background: #f0f0f0;
 }
-
 .hero img {
   max-width: 200px;
   height: auto;
 }
-
+section {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  margin-bottom: 1em;
+}
 .gallery {
   display: flex;
   gap: 1em;
-  padding: 2em;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .gallery img {
   width: 300px;
-  height: auto;
   border: 2px solid #ccc;
   border-radius: 5px;
 }
-
-section {
-  padding: 2em;
-  max-width: 800px;
+.swiper {
+  width: 90%;
   margin: auto;
 }
-
-h2 {
-  margin-bottom: 1em;
+.swiper-slide img {
+  width: 100%;
+  border-radius: 10px;
 }
